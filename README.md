@@ -28,6 +28,15 @@ Although a helm chart is a chart, it is nothing to do with graphical representat
 - These charts can be versioned, shared, and published.
 - Already, a huge amount of charts are available with Helm. at the time of writing this content, nearly 11000 charts are available https://artifacthub.io/
 
+# Installation of Helm chart
+- Based on your OS.exact steps for installing the helm chart is available at this URL
+
+- When we run the helm version, it will provide the helm version. It will also ensure that the helm is installed properly.
+  
+![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_version.jpeg)
 
 
+
+
+![alt text](ttps://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_pull.jpeg)
 
