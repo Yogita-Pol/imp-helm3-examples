@@ -41,10 +41,23 @@ On the artifact, hub search the required chart and select official.
 ![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/artifactio_jenkins_official_image.jpeg)
 
 # Installing charts from artifactory hub
-- Please note although it highlights about artificatory hub similar steps can be used for other repos
+- Please note although it highlights about artifactory hub similar steps can be used for other repos
 - In an earlier section, we saw how to check to require repos.
 - Once we select a specific chart it will give exact steps
 
+![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_repo_add.jpeg)
 
+It will add it to local repo.
+
+![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_search_repo.jpeg)
+
+Please note it still represents meta information and not actual,physical helm chart on your local machine.To install helm chart on your local machine we need to do helm pull. 
+
+Helm pull will pull the actual chart to the local machine. –untar=true will untar it. 
 ![alt text](ttps://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_pull.jpeg)
 
+# Other benefits of Helm Charts
+
+- Sub chart- e.g., running backend (SQL, NoSQL database in the same chart). E.g., running MySQL in the same chart for application.
+- Pre and post-deployment hooks for charts
+- Chart package signing to verify integrity- beneficial for the production environment.
