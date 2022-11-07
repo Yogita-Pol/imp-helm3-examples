@@ -35,6 +35,8 @@ Although a helm chart is a chart, it is nothing to do with graphical representat
   
 ![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_version.jpeg)
 
+# Searching official helm charts
+On the artifact, hub search the required chart and select official.
 
 
 
