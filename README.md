@@ -38,6 +38,12 @@ Although a helm chart is a chart, it is nothing to do with graphical representat
 # Searching official helm charts
 On the artifact, hub search the required chart and select official.
 
+![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/artifactio_jenkins_official_image.jpeg)
+
+# Installing charts from artifactory hub
+- Please note although it highlights about artificatory hub similar steps can be used for other repos
+- In an earlier section, we saw how to check to require repos.
+- Once we select a specific chart it will give exact steps
 
 
 ![alt text](ttps://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_pull.jpeg)
