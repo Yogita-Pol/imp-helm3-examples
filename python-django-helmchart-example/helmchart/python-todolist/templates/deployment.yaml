@@ -37,14 +37,19 @@ spec:
             - name: http
               containerPort: 8000
               protocol: TCP
-          #livenessProbe:
-            #httpGet:
-              #path: /
-              #port: 8000
-          #readinessProbe:
-            #httpGet:
-              #path: /
-              #port: 8000
+          livenessProbe:
+            httpGet:
+              path: {{ .Values.livenessProbe.todoapp.path }}
+              port: {{ .Values.livenessProbe.todoapp.port }}
+            initialDelaySeconds: {{ .Values.livenessProbe.todoapp.initialDelaySeconds }}
+            periodSeconds: {{ .Values.livenessProbe.todoapp.periodSeconds }}
+#            timeoutSeconds:  {{ .Values.livenessProbe.todoapp.timeoutSeconds }}
+#          readinessProbe:
+#            httpGet:
+#              path: {{ .Values.readinessProbe.todoapp.path }}
+#              port: {{ .Values.readinessProbe.todoapp.port }}
+#            initialDelaySeconds: {{ .Values.readinessProbe.todoapp.initialDelaySeconds }}
+#            timeoutSeconds:  {{ .Values.readinessProbe.todoapp.timeoutSeconds }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}

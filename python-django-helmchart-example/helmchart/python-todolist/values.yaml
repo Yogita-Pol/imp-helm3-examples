@@ -35,10 +35,34 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
+#readinessProbe:
+#            httpGet:
+#              path: /todos
+#              port: 8000
+#            initialDelaySeconds: 10
+#            timeoutSeconds: 5
+
+livenessProbe:
+  todoapp:
+    path: /todos/
+    port: 8000
+    initialDelaySeconds: 10
+    timeoutSeconds: 5
+    periodSeconds: 20
+#readinessProbe:
+#  todoapp:
+#    path: /todos/
+#    port: 8000
+#    initialDelaySeconds: 10
+#    timeoutSeconds: 5
+
+
+
+
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8000
 
 ingress:
   enabled: false
