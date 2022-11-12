@@ -54,7 +54,7 @@ It will add it to local repo.
 Please note it still represents meta information and not actual,physical helm chart on your local machine.To install helm chart on your local machine we need to do helm pull. 
 
 Helm pull will pull the actual chart to the local machine. –untar=true will untar it. 
-![alt text](ttps://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_pull.jpeg)
+![alt text](https://github.com/Yogita-Pol/imp-helm3-examples/blob/main/Images/helm_pull.jpeg)
 
 # Other benefits of Helm Charts
 
